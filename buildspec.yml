@@ -1,0 +1,35 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - echo WebHook Event = $CODEBUILD_WEBHOOK_EVENT 
+      - SOURCE_VERSION=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - echo ${SOURCE_VERSION}
+      - pip3 install yamllint
+      - echo "Installing dependencies..."
+
+  pre_build:
+    commands:
+      - pip install -r requirements.txt
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - ls -lrth
+      - echo Build started on `date`
+      - if [ -z "$TEMPLATE" ]; then echo "Setting default template name value..."; $TEMPLATE="template.yaml"; fi
+      - echo "Template file name to be used in build -> $TEMPLATE"
+      # validating, build and packaging the template file.
+      - sam validate --template $TEMPLATE 
+      - sam build -t $TEMPLATE
+      - sam package --output-template-file template.yaml -t $TEMPLATE
+      - zip -r internal.zip template.yaml
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
