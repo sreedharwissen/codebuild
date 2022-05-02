@@ -3,20 +3,28 @@ AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
   InstanceType:
     Type: String
+    Default: "m4.xlarge"
   ReleaseLabel:
     Type: String
+    Default: "emr-6.5.0"
   SubnetId:
     Type: String
+    Default: "subnet-66d1882a"
   MinimumCapacityUnits:
     Type: String
+    Default: "3"
   MaximumCapacityUnits:
     Type: String
+    Default: "10"
   MaximumCoreCapacityUnits:
     Type: String
+    Default: "2"
   MaximumOnDemandCapacityUnits:
     Type: String
+    Default: "8"
   UnitType:
     Type: String
+    Default: "Instances"
 Resources:
   cluster:
     Type: AWS::EMR::Cluster
