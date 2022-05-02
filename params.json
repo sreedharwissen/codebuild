@@ -1,4 +1,5 @@
 {
+  "Parameters": {
 "InstanceType" : "m4.xlarge",
 "ReleaseLabel" : "emr-6.5.0",
 "SubnetId" : "subnet-66d1882a",
@@ -7,4 +8,5 @@
 "MaximumCoreCapacityUnits": "2",
 "MaximumOnDemandCapacityUnits": "8",
 "UnitType": "Instances"
+}
 }
