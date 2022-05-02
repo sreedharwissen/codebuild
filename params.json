@@ -1,10 +1,7 @@
 {
-"CustomAmiId" : "ami-0482c3d18164023c5",
 "InstanceType" : "m4.xlarge",
 "ReleaseLabel" : "emr-6.5.0",
 "SubnetId" : "subnet-66d1882a",
-"ElasticMapReducePrincipal" : "elasticmapreduce.amazonaws.com",
-"Ec2Principal" : "ec2.amazonaws.com",
 "MinimumCapacityUnits": "3",
 "MaximumCapacityUnits": "10",
 "MaximumCoreCapacityUnits": "2",
