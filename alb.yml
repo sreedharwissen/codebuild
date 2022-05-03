@@ -4,17 +4,17 @@ Parameters:
     VPC:
         Type: String
         Description: The vpc to launch the service
-        Default: vpc-ID
+        Default: "vpc-1ef16275"
 
     PublicSubnet1:
         Type: String
         Description: The subnet where to launch the service
-        Default: subnet-ID
+        Default: "subnet-66d1882a"
 
     PublicSubnet2:
         Type: String
         Description: the subnet where to Launch the service
-        Default: subnet-ID
+        Default: "subnet-66d1882a"
 
 Resources:            
     ALBSecurityGroup:
