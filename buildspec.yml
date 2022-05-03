@@ -25,8 +25,7 @@ phases:
       - sam validate --template $TEMPLATE 
       - sam build -t $TEMPLATE
       - sam package --output-template-file template.yaml -t $TEMPLATE
-      - zip -r SampleApp.zip template.yaml params.json
-      - aws s3 cp SampleApp.zip s3://emrbucketcicdpipeline/
+      - zip -r internal.zip template.yaml
 
   post_build:
     commands:
