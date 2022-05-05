@@ -3,7 +3,7 @@
       "ReleaseLabel":"emr-6.5.0",
       "ElasticMapReducePrincipal":"elasticmapreduce.amazonaws.com",
       "Ec2Principal":"ec2.amazonaws.com",
-      "TerminationProtected":"True",
+      "TerminationProtected":"False",
       "InstanceType":"m5.4xlarge",
       "SubnetId":"subnet-66d1882a"
    }
