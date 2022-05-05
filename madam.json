@@ -1,0 +1,12 @@
+{
+   "Parameters":{
+      "emrEc2InstanceProfile":"AmazonElasticMapReduceforEC2Role",
+      "emrRole":"EMR_DefaultRole",
+      "ReleaseLabel":"6.2.0",
+      "ElasticMapReducePrincipal":"elasticmapreduce.amazonaws.com",
+      "Ec2Principal":"ec2.amazonaws.com",
+      "emrEc2Role":"EMR_EC2_DefaultRole",
+      "TerminationProtected":"True",
+      "InstanceType":"m5.4xlarge"
+   }
+}
