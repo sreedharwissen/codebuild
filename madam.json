@@ -1,6 +1,6 @@
 {
    "Parameters":{
-      "ReleaseLabel":"6.2.0",
+      "ReleaseLabel":"emr-6.5.0",
       "ElasticMapReducePrincipal":"elasticmapreduce.amazonaws.com",
       "Ec2Principal":"ec2.amazonaws.com",
       "TerminationProtected":"True",
