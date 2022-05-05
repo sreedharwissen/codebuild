@@ -7,6 +7,7 @@
       "Ec2Principal":"ec2.amazonaws.com",
       "emrEc2Role":"EMR_EC2_DefaultRole",
       "TerminationProtected":"True",
-      "InstanceType":"m5.4xlarge"
+      "InstanceType":"m5.4xlarge",
+      "SubnetId":"subnet-66d1882a"
    }
 }
