@@ -17,6 +17,12 @@ Resources:
   cluster:
     Type: AWS::EMR::Cluster
     Properties:
+      Applications:
+        - Name: Hue
+        - Name: Spark
+        - Name: Livy
+        - Name: ZooKeeper
+        - Name: Zeppelin
       Instances:
         MasterInstanceFleet:
           Name: cfnMaster
