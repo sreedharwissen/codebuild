@@ -4,7 +4,7 @@
       "ElasticMapReducePrincipal":"elasticmapreduce.amazonaws.com",
       "Ec2Principal":"ec2.amazonaws.com",
       "TerminationProtected":"False",
-      "InstanceType":"m5.4xlarge",
+      "InstanceType":"c5.xlarge",
       "SubnetId":"subnet-66d1882a"
    }
 }
