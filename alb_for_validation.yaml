@@ -23,7 +23,7 @@ Resources:
       Tags:
       - Key: name
         Value: datasci-alb
-  dszepFrontendTargetGroup:
+  emrzepFrontendTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
       Name: datasci-zep
@@ -48,14 +48,11 @@ Resources:
 
   443Listener:
     Type: AWS::ElasticLoadBalancingV2::Listener
-    DependsOn:
-    - dszephueAlb1
-    - dszepFrontendTargetGroup
     Properties:
       DefaultActions:
       - Type: forward
         TargetGroupArn:
-          Ref: dszepFrontendTargetGroup
+          Ref: emrzepFrontendTargetGroup
       Certificates:
       - CertificateArn: arn:aws:acm:us-east-2:882956824445:certificate/dc8babf4-0701-432f-9afd-73605b45b448
       LoadBalancerArn:
@@ -65,9 +62,6 @@ Resources:
       SslPolicy: ELBSecurityPolicy-TLS-1-2-Ext-2018-06
   8080Listener:
     Type: AWS::ElasticLoadBalancingV2::Listener
-    DependsOn:
-    - dszephueAlb1
-    - dszepFrontendTargetGroup
     Properties:
       DefaultActions:
       - Type: redirect
