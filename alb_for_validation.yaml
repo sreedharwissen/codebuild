@@ -56,7 +56,7 @@ Resources:
       Certificates:
       - CertificateArn: arn:aws:acm:us-east-2:882956824445:certificate/dc8babf4-0701-432f-9afd-73605b45b448
       LoadBalancerArn:
-        Ref: dszephueAlb1
+        Ref: emrzephueAlb1
       Port: 443
       Protocol: HTTPS
       SslPolicy: ELBSecurityPolicy-TLS-1-2-Ext-2018-06
@@ -72,7 +72,7 @@ Resources:
           Path: "/unauthorized"
           StatusCode: HTTP_301
       LoadBalancerArn:
-        Ref: dszephueAlb1
+        Ref: emrzephueAlb1
       Port: 80
       Protocol: HTTP
   emrhueFrontendTargetGroup:
