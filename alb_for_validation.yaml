@@ -12,7 +12,7 @@ Resources:
     Properties:
       Name: datasci-alb
       Type: application
-      Scheme: Internet-facing
+      Scheme: internet-facing
       Subnets:
       - 'subnet-42c17a29'
       - 'subnet-66d1882a'
@@ -86,7 +86,7 @@ Resources:
 
       Port: 8888
       Protocol: HTTP
-      VpcId : 'vpc-78996d1e'
+      VpcId : 'vpc-1ef16275'
       HealthCheckEnabled: true
       HealthCheckIntervalSeconds: 61
       HealthCheckPath: "/hue/accounts/login"
