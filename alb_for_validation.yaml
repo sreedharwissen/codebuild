@@ -27,7 +27,11 @@ Resources:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
       Name: datasci-zep
-      TargetType: ip
+      TargetType: instance
+      Targets:
+        Id: 
+        Port: 
+
       Port: 8890
       Protocol: HTTP
       VpcId : 'vpc-1ef16275'
@@ -81,7 +85,7 @@ Resources:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
       Name: datasci-hue1
-      TargetType: ip
+      TargetType: instance
       Port: 8888
       Protocol: HTTP
       VpcId : 'vpc-78996d1e'
