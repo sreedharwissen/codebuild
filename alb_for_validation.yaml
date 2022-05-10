@@ -30,7 +30,7 @@ Resources:
       TargetType: instance
       Targets:
         - Id: 'i-005c0d30a733efacc'
-        - Port: 8890
+          Port: 8890
 
       Port: 8890
       Protocol: HTTP
@@ -82,7 +82,7 @@ Resources:
       TargetType: instance
       Targets:
         - Id: 'i-005c0d30a733efacc'
-        - Port: 8888
+          Port: 8888
 
       Port: 8888
       Protocol: HTTP
