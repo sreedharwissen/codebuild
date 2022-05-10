@@ -29,8 +29,8 @@ Resources:
       Name: datasci-zep
       TargetType: instance
       Targets:
-        Id: 
-        Port: 
+        Id: i-005c0d30a733efacc
+        Port: 8890
 
       Port: 8890
       Protocol: HTTP
@@ -86,6 +86,10 @@ Resources:
     Properties:
       Name: datasci-hue1
       TargetType: instance
+      Targets:
+        Id: i-005c0d30a733efacc
+        Port: 8888
+
       Port: 8888
       Protocol: HTTP
       VpcId : 'vpc-78996d1e'
