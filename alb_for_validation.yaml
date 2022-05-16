@@ -32,7 +32,7 @@ Resources:
         - Id: 'i-0fab0bbff81a8cc1c'
           Port: 8890
 
-      Port: 8890
+      Port: 80
       Protocol: HTTP
       VpcId : 'vpc-1ef16275'
       HealthCheckEnabled: true
@@ -84,7 +84,7 @@ Resources:
         - Id: 'i-0fab0bbff81a8cc1c'
           Port: 8888
 
-      Port: 8888
+      Port: 80
       Protocol: HTTP
       VpcId : 'vpc-1ef16275'
       HealthCheckEnabled: true
