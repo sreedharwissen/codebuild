@@ -31,16 +31,16 @@ Resources:
           InstanceType: !Ref InstanceType
           Market: ON_DEMAND
           Name: cfnMaster
-        CoreInstanceGroup:
-          InstanceCount: 1
-          InstanceType: !Ref InstanceType
-          Market: ON_DEMAND
-          Name: cfnCore
-        TaskInstanceGroups:
-          - InstanceCount: 1
-            InstanceType: !Ref InstanceType
-            Market: ON_DEMAND
-            Name: cfnTask-1
+#         CoreInstanceGroup:
+#           InstanceCount: 1
+#           InstanceType: !Ref InstanceType
+#           Market: ON_DEMAND
+#           Name: cfnCore
+#         TaskInstanceGroups:
+#           - InstanceCount: 1
+#             InstanceType: !Ref InstanceType
+#             Market: ON_DEMAND
+#             Name: cfnTask-1
         TerminationProtected: !Ref TerminationProtected
         Ec2SubnetIds:
           - !Ref SubnetId
